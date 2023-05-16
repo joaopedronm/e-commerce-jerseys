@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1 {
+    font-size: 62px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #222;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+/* Header Start */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background: #fbfbfb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}  
+
+#header div p {
+    font-family: Righteous;
+    font-size: 20px;
+    text-decoration: none;
+    color: #202020;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    transition: 0.1s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Home Page */
+
+#hero {
+    background-image: url("./img/p-mahomes-home-3.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 50% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #088178;
+}
+
+#hero button {
+    color: #088178;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #369683;
+    padding: 10px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#hero button:hover {
+    background-color: #297c6b;
+    color: #fff;
+    transform: scale(1.1); /* Efeito de escala */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#feature .feature-box {
+    width: 250px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.04);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .feature-box:hover {
+    box-shadow: 10px 10px 54px rgba(14, 128, 119, 0.1);
+}
+
+#feature .feature-box h6 {
+    display: inline-block;
+    padding: 9px 4px 6px 4px;
+    line-height: 1.3;
+    border-radius: 4px;
+    color: #088178;
+    background-color: rgba(8, 129, 120, 0.05);
+}
+
+#feature .feature-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#products {
+    text-align: center;
+}
+
+#products .product-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#products .single-product {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    /* transition: 0.2s ease; */
+    transition-duration: 0.3s;
+    position: relative;
+}
+
+#products .single-product:hover {
+    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06); */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.08);
+
+}
+
+#products .single-product img {
+    width: 100%;
+}
+
+#products .single-product .description {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#products .single-product .description span {
+    color: #06060691;
+    font-size: 12px;
+}
+
+#products .single-product .description h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+#products .single-product .description i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#products .single-product .description h4 {
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#products .single-product .description h4 span {
+    padding-top: 7px;
+    padding-left: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ef3636;
+    text-decoration: line-through;
+}
+
+#products .single-product .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./img/destaque.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: top 30% right 0;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #ef3636;
+}
+
+#banner button {
+    color: #088178;
+    font-size: 16px;
+    /* background: transparent; */
+    border: 1px solid #369683;
+    padding: 10px 30px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+#banner button:hover {
+    background-color: #297c6b;
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.02);
+}
+
+.title-features {
+    text-align: center;
+    margin-top: 32px;
+    /* color: #088178; */
+}
+
+#sm-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('./img/banners/01\ -\ Ravens.png');
+    min-width: 320px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    /* margin-bottom: 15px; */
+}
+
+#sm-banner .banner-box2 {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('./img/banners/02\ -\ Chiefs.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#sm-banner .banner-box3 {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('./img/banners/03\ -\ Giants.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#sm-banner .banner-box4 {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('./img/banners/04\ -\ Packers.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#sm-banner .banner-box5 {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('./img/banners/05\ -\ Bengals.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#sm-banner .banner-box6 {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('./img/banners/06\ -\ Vikings.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#sm-banner .banner-box7 {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('./img/banners/07\ -\ Bills.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#sm-banner .banner-box8 {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('./img/banners/08\ -\ Bears.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#sm-banner h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+#sm-banner button {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#sm-banner button:hover {
+    background-color: #297c6b;
+    color: #fff;
+    transform: scale(1.1); /* Efeito de escala */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+footer .install .row .btn {
+    border: 1px solid #088178;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer .install img {
+    margin: 6px 5px 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
