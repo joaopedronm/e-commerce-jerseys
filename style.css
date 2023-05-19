@@ -109,10 +109,19 @@ p {
     left: 20px;
 }
 
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
 /* Home Page */
 
 #hero {
-    background-image: url("./img/p-mahomes-home-3.png");
+    background-image: url("./img/bg-hero-1.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -491,4 +500,151 @@ footer a:hover {
 footer .copyright {
     width: 100%;
     text-align: center;
+}
+
+/* Start Media Query */
+
+@media (max-width: 2560px) {
+    #hero {
+        background-image: url('./img/bg-hero-0.png');
+    }
+}
+
+@media (max-width: 1200px) {
+    #hero {
+        background-image: url('./img/bg-hero-1.png');
+    }
+}
+
+@media (max-width: 820px) {
+
+    .section-p1 {
+        padding: 40px 0px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+       margin-bottom: 25px; 
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 25px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        background-image: url('./img/bg-hero-2.png');
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 30% right 10%;
+    }
+
+    #hero h2 {
+        font-size: 36px;
+        margin-top: 0;
+    }
+
+    #hero h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .feature-box {
+        width: 180px;
+        margin: 15px 2px;
+    }
+
+    #products .product-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/destaque.jpg');
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+    }
+
+    #sm-banner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+    }
+
+    #sm-banner .banner-box {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        align-items: flex-start;
+        min-width: 160px;
+        height: 25vh;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+    }
+
+    #sm-banner .banner-box h2 {
+        line-height: 28px;
+        font-size: 22px;
+    }
+
+    footer {
+        margin: 0 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .col .logo {
+        display: none;
+    }
 }
