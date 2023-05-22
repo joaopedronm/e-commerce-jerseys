@@ -337,8 +337,6 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 12px;
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
 }
 
 #sm-banner .banner-box {
@@ -416,6 +414,7 @@ p {
 #sm-banner h2 {
     color: #fff;
     font-size: 36px;
+    line-height: 42px;
 }
 
 #sm-banner button {
@@ -672,7 +671,12 @@ footer .copyright {
     }
 
     #hero h2 {
+        width: 100%;
         line-height: 42px;
+    }
+
+    #hero h1 {
+        width: 100%;
     }
 
     #hero p {
