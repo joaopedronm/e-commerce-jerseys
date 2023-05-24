@@ -41,31 +41,48 @@ images.push(arrImg1, arrImg2, arrImg3)
 
 
 
-const products = [
-    {
-        id: 1,
-        title: 'Patrick Mahomes - Chiefs',
-        price: 219.90,
-        img1: images[0][0],
-        img2: images[0][1],
-        img3: images[0][2]
-    },
-    {
-        id: 2,
-        title: 'Josh Allen - Bills',
-        price: 219.90,
-        img1: images[1][0],
-        img2: images[1][1],
-        img3: images[1][2]
-    },
-    {
-        id: 3,
-        title: 'Joe Burrow - Bengals',
-        price: 199.90,
-        img1: images[2][0],
-        img2: images[2][1],
-        img3: images[2][2]
-    }
-]
+// const products = [
+//     {
+//         id: 1,
+//         title: 'Patrick Mahomes - Chiefs',
+//         price: 219.90,
+//         img1: images[0][0],
+//         img2: images[0][1],
+//         img3: images[0][2]
+//     },
+//     {
+//         id: 2,
+//         title: 'Josh Allen - Bills',
+//         price: 219.90,
+//         img1: images[1][0],
+//         img2: images[1][1],
+//         img3: images[1][2]
+//     },
+//     {
+//         id: 3,
+//         title: 'Joe Burrow - Bengals',
+//         price: 199.90,
+//         img1: images[2][0],
+//         img2: images[2][1],
+//         img3: images[2][2]
+//     }
+// ]
 
 let url_atual = window.location.href;
+
+const products = document.getElementsByClassName("single-product");
+
+for (let i = 0; i < products.length; i++) {
+    products[i].addEventListener("click", function() {
+      // Obtém as informações do produto clicado
+      const span = this.querySelector(".description span");
+      const h5 = this.querySelector(".description h5");
+      const h4 = this.querySelector(".description h4");
+  
+      // Cria uma URL dinâmica para a página do produto
+      const productURL = "product.html?" + encodeURIComponent(h5.textContent);
+  
+      // Redireciona para a página do produto
+      window.location.href = productURL;
+    });
+}
