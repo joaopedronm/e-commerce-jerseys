@@ -41,6 +41,10 @@ h6 {
     margin: 40px 0;
 }
 
+.img-disabled {
+    display: none;
+}
+
 p {
     font-size: 16px;
     color: #465b52;
@@ -144,7 +148,7 @@ p {
     color: #088178;
 }
 
-#hero button {
+#hero a {
     color: #088178;
     font-size: 16px;
     background: transparent;
@@ -153,14 +157,20 @@ p {
     transition-duration: 0.3s;
     cursor: pointer;
     font-weight: 500;
+    text-decoration: none;
 }
 
-#hero button:hover {
+#hero a:hover {
     background-color: #297c6b;
     color: #fff;
     transform: scale(1.1); /* Efeito de escala */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+/* #hero button a {
+    text-decoration: none;
+    color: #088178;
+} */
 
 #feature {
     display: flex;
