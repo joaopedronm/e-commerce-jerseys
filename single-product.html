@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="imagex/png" href="./img/logo.png">
     <link rel="stylesheet" href="./style.css">
 
-    <!-- Shop Page -->
+    <!-- Product Page -->
 
 </head>
 <body>
@@ -37,150 +37,52 @@
         </div>
     </section>
 
-    <section id="page-header">
-        <h2>Estilo e Paixão em Campo</h2>
-        <p>A loja definitiva para fãs de Futebol Americano!</p>
+    <section id="product-details" class="section-p1">
+
+        <div class="single-product-img">
+            <img src="./img/jerseys/gallery/mahomes-01.png" alt="" width="100%" id="MainImg">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="./img/jerseys/gallery/mahomes-02.png" alt="" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="./img/jerseys/gallery/mahomes-03.png" alt="" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="./img/jerseys/gallery/mahomes-01.png" alt="" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-product-details">
+            <h6>Home / Jersey</h6>
+            <h4 class="product-name">Patrick Mahomes - Chiefs</h4>
+            <h2>R$219,90</h2>
+
+            <select>
+                <option>Tamanho</option>
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <input type="number" value="1">
+            <button>Adicionar ao Carrinho</button>
+            <h4>Detalhes do Produto</h4>
+            <span>A combinação perfeita entre estilo e desempenho. Feita com materiais de alta qualidade, esta Jersey oferece conforto e durabilidade durante as partidas mais intensas. Seu tecido respirável mantém você fresco e seco, permitindo que você dê o seu melhor. <br>Com um ajuste preciso e design moderno, esta Jersey é a escolha ideal para os verdadeiros fãs do esporte. As cores vibrantes e os detalhes autênticos garantem que você se destaque na multidão, enquanto mostra seu apoio ao seu time favorito. Disponível em diferentes tamanhos, essa Jersey é uma peça obrigatória para os aficionados por futebol americano.</span>
+
+        </div>
+
     </section>
 
     <section id="products" class="section-p1">
+        <h2>Produtos Semelhantes</h2>
+        <p>Compre mais itens e receba um desconto no checkout!</p>
 
         <div class="product-container">
-            <div class="single-product" onclick="window.location.href='single-product.html';">
-                <img src="./img/jerseys/01 - Josh Allen.png" alt="">
-                <div class="description">
-                    <span>Buffalo Bills</span>
-                    <h5>Josh Allen - Bills</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>R$219,90</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="single-product">
-                <img src="./img/jerseys/11 - Chiefs.png" alt="">
-                <div class="description">
-                    <span>Kansas City Chiefs</span>
-                    <h5>Patrick Mahomes - Chiefs</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>R$219,90</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="single-product">
-                <img src="./img/jerseys/02 - Justin Herbert.png" alt="">
-                <div class="description">
-                    <span>Los Angeles Chargers</span>
-                    <h5>Justin Herbert - Chargers</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>R$199,90</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="single-product">
-                <img src="./img/jerseys/03 - Vikings.png" alt="">
-                <div class="description">
-                    <span>Minessota Vikings</span>
-                    <h5>Kirk Cousins - Vikings</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>R$199,90</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="single-product">
-                <img src="./img/jerseys/04 - Steelers.png" alt="">
-                <div class="description">
-                    <span>Pittsburgh Steelers</span>
-                    <h5>TJ Watt - Steelers</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>R$199,90</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="single-product">
-                <img src="./img/jerseys/05 - Jets.png" alt="">
-                <div class="description">
-                    <span>New York Jets</span>
-                    <h5>Aaron Rodgers - Jets</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>R$219,90</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="single-product">
-                <img src="./img/jerseys/06 - Falcons.png" alt="">
-                <div class="description">
-                    <span>Atlanta Falcons</span>
-                    <h5>Bijan Robinson - Falcons</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>R$199,90</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="single-product">
-                <img src="./img/jerseys/07 - Eagles.png" alt="">
-                <div class="description">
-                    <span>Philadelphia Eagles</span>
-                    <h5>DeVonta Smith - Eagles</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>R$219,90</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
-            </div>
-
             <div class="single-product">
                 <img src="./img/jerseys/12 - Chiefs2.png" alt="">
                 <div class="description">
@@ -252,12 +154,6 @@
         </div>
     </section>
 
-    <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
-    </section>
-
     <footer class="section-p1">
 
         <div class="col">
@@ -310,9 +206,23 @@
             <p>© 2023, The Endzone Store - Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        var mainImg = document.getElementById("MainImg")
+        var smallImg= document.getElementsByClassName("small-img")
+
+        smallImg[0].onclick = function() {
+            mainImg.src = smallImg[0].src
+        }
+        smallImg[1].onclick = function() {
+            mainImg.src = smallImg[1].src
+        }
+        smallImg[2].onclick = function() {
+            mainImg.src = smallImg[2].src
+        }
+    </script>
     
 
     <script src="./script.js"></script>
-    <script src="./products.js"></script>
 </body>
 </html>
