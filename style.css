@@ -120,6 +120,10 @@ p {
     align-items: center;
 }
 
+#mobile i {
+    cursor: pointer;
+}
+
 #close {
     display: none;
 }
