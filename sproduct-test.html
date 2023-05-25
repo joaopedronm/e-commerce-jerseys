@@ -23,9 +23,9 @@
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Loja</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
 
@@ -40,40 +40,38 @@
     <section id="product-details" class="section-p1">
 
         <div class="single-product-img">
-            <img width="100%" id="MainImg">
+            <img width="100%" id="MainImg" src="./img/jerseys/gallery/aaron-rodgers-01.png">
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img width="100%" class="small-img" id="img1">
+                    <img width="100%" class="small-img" id="img1" src="./img/jerseys/gallery/aaron-rodgers-02.png">
                 </div>
 
                 <div class="small-img-col">
-                    <img width="100%" class="small-img" id="img2">
+                    <img width="100%" class="small-img" id="img2" src="./img/jerseys/gallery/aaron-rodgers-03.png">
                 </div>
 
                 <div class="small-img-col">
-                    <img width="100%" class="small-img" id="img3">
+                    <img width="100%" class="small-img" id="img3" src="./img/jerseys/gallery/aaron-rodgers-01.png">
                 </div>
             </div>
         </div>
 
         <div class="single-product-details">
             <h6>Home / Jersey</h6>
-            <h4 class="product-name"></h4>
-            <h2 class="product-price"></h2>
+            <h4 class="product-name">Aaron Rodgers - Jets</h4>
+            <h2 class="product-price">R$219,90</h2>
 
             <div class="inputs">
-
+                <select>
+                    <option>Tamanho</option>
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                </select>
+    
+                <input type="number" value="1">
             </div>
-            <select>
-                <option>Tamanho</option>
-                <option>P</option>
-                <option>M</option>
-                <option>G</option>
-            </select>
-
-            <input type="number" value="1">
-
             <button>Adicionar ao Carrinho</button>
             <h4>Detalhes do Produto</h4>
             <span>A combinação perfeita entre estilo e desempenho. Feita com materiais de alta qualidade, esta Jersey oferece conforto e durabilidade durante as partidas mais intensas. Seu tecido respirável mantém você fresco e seco, permitindo que você dê o seu melhor. <br>Com um ajuste preciso e design moderno, esta Jersey é a escolha ideal para os verdadeiros fãs do esporte. As cores vibrantes e os detalhes autênticos garantem que você se destaque na multidão, enquanto mostra seu apoio ao seu time favorito. Disponível em diferentes tamanhos, essa Jersey é uma peça obrigatória para os aficionados por futebol americano.</span>
@@ -227,24 +225,5 @@
         }
     </script>
     
-
-    <script src="./products.js"></script>
-    <script>
-        // Obter os parâmetros da URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const title = decodeURIComponent(urlParams.get('title'));
-        const price = decodeURIComponent(urlParams.get('price'));
-        const image1Src = decodeURIComponent(urlParams.get('image'));
-        const image2Src = decodeURIComponent(urlParams.get('image2'));
-        const image3Src = decodeURIComponent(urlParams.get('image3'));
-
-        // Atualizar a página com as informações do produto
-        document.querySelector('.product-name').textContent = title;
-        document.querySelector('.product-price').textContent = price;
-        document.querySelector('#MainImg').setAttribute('src', image1Src);
-        document.querySelector('#img1').setAttribute('src', image2Src);
-        document.querySelector('#img2').setAttribute('src', image3Src);
-        document.querySelector('#img3').setAttribute('src', image1Src);
-    </script>
 </body>
 </html>
