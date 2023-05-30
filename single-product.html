@@ -72,9 +72,9 @@
                 <option>G</option>
             </select>
 
-            <input type="number" value="1">
+            <input type="number" value="1" min="0">
 
-            <button>Adicionar ao Carrinho</button>
+            <button id="add-to-cart-button">Adicionar ao Carrinho</button>
             <h4>Detalhes do Produto</h4>
             <span>A combinação perfeita entre estilo e desempenho. Feita com materiais de alta qualidade, esta Jersey oferece conforto e durabilidade durante as partidas mais intensas. Seu tecido respirável mantém você fresco e seco, permitindo que você dê o seu melhor. <br>Com um ajuste preciso e design moderno, esta Jersey é a escolha ideal para os verdadeiros fãs do esporte. As cores vibrantes e os detalhes autênticos garantem que você se destaque na multidão, enquanto mostra seu apoio ao seu time favorito. Disponível em diferentes tamanhos, essa Jersey é uma peça obrigatória para os aficionados por futebol americano.</span>
 
@@ -250,6 +250,8 @@
 
     <script src="./script.js"></script>
     <script src="./products.js"></script>
+    
+    
     <script>
         // Obter os parâmetros da URL
         const urlParams = new URLSearchParams(window.location.search);
@@ -267,5 +269,7 @@
         document.querySelector('#img2').setAttribute('src', image3Src);
         document.querySelector('#img3').setAttribute('src', image1Src);
     </script>
+
+    <script src="./single-product.js"></script>
 </body>
 </html>
